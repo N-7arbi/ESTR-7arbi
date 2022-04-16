@@ -1,0 +1,118 @@
+.selles{
+	border:3px solid #000;
+	width:300px;
+	display: grid; 
+	margin-left:calc(50% - 150px);
+	margin-bottom: 50px ;
+	height:350px;
+}
+.selles-tit{
+	width:100%;
+	text-align:center;
+}
+.selles-img{
+	width:270px;
+	height:270px;
+	margin-left:12px;
+	border:1px solid;
+	margin-bottom:-10px;
+}
+.selles-payUrl{
+	border:none;
+	width:92%;
+	height:30px;
+	background-color:#59ddfe;
+	border-radius:20px;
+	margin-left: 4%;
+	text-align: center;
+	
+}
+
+/* 888888888888888888888888888888 */
+
+.selles2{
+	border:3px solid #000;
+	width:100%;
+	display: grid; 
+	margin-bottom: 50px ;
+	height:100px;
+}
+.selles-tit2{
+	position: absolute;
+	width:auto;
+	margin-top:30px;
+	margin-left:120px;
+}
+.selles-img2{
+	width:90px;
+	height:90px;
+	margin-left:12px;
+	border:1px solid;
+	margin-bottom:-10px;
+}
+.selles-payUrl2{display: none;}
+.selles-edit2{
+	border:none;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	background-color:#daf1d1;
+	position:absolute;
+	margin-top:00px;
+	margin-left:calc(100% - 70px);
+}
+.selles-delete2{
+	border:none;
+	width:40px;
+	height:40px;
+	padding:8px 8px 8px 8px;
+	border-radius:100%;
+	background-color:#ac163a;
+	position:absolute;
+	margin-top:50px;
+	margin-left:calc(100% - 70px);
+}
+
+.order{
+	width:100%;
+	height:50px;
+	background-color: #2f484e;
+}
+.selles-buyer2{
+	position: absolute;
+	width:auto;
+	margin-top:30px;
+	margin-left:190px;
+}
+.selles-loc2{
+	position: absolute;
+	width:auto;
+	margin-top:30px;
+	margin-left:550px;
+}
+.selles-delete3{
+	border:none;
+	width:50px;
+	height:50px;
+	padding:8px 8px 8px 8px;
+	border-radius:100%;
+	background-color:#ac163a;
+	position:absolute;
+	margin-top:20px;
+	margin-left:calc(100% - 70px);
+}
+.pay-pop{
+ position:fixed;
+ padding-top:100px;
+ text-align:center;
+ top:100px;
+ width:300px;
+ height: 300px;
+ background-color: #25383d;
+ left:calc(50% - 150px);
+}
+.remove-pay-pop{
+	position:absolute;
+	top:-10px;
+	left: 210px;
+}

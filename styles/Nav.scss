@@ -1,0 +1,157 @@
+.nav{
+  padding: 0;
+  margin-top: 0px;
+	background-color:#252525;
+	width:100%;
+	height:75px;
+	position:fixed;
+  z-index:10000000000000000000;
+}
+.user-email{
+	position: absolute;
+	margin-top:-60px;
+	margin-left:50px;
+}
+.titel{
+	font-size:50px;
+	color:white;
+	position:absolute;
+	right:10px;
+	top:-30px;
+}
+.bars-solid{
+	width:60px;
+	position:absolute;
+	z-index:100000000000000000000;
+}
+.nav-side{
+	width:300px;
+	height:100%;
+	background-color:#252525;
+	position:fixed;
+	
+}
+.signup{
+	top:200px;
+	left:90px;
+	width:120px;
+	height:30px;
+	position:absolute;
+	border-radius:15px;
+	color:white;
+	border:none;
+	background-color:#5e8d93;
+}
+.signout{
+	top:220px;
+	left:90px;
+	width:120px;
+	height:30px;
+	position:absolute;
+	border-radius:15px;
+	color:white;
+	border:none;
+	background-color:#9c2c46;
+}
+.user-img{
+	width:110px;
+	border-radius:20px;
+  top:60px;
+  left:95px;
+  position:absolute;
+}
+.user-email{
+	font-size:27px;
+	top:240px;
+}
+.default{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background-color:white;
+}
+
+
+.popup-box {
+position: fixed;
+background: #00000050;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+}
+
+@keyframes example {
+	10%{  margin-left:10%}
+	30%{  margin-left:20%}
+	70%{  margin-left:15%}
+}
+.errorMsg{
+	position: absolute;
+  margin:0 auto;
+  margin-top: calc(100vh - 85vh - 55px);
+  margin-left:15%;
+  
+  animation-name:example;
+	animation-duration: 0.3s;
+  
+  color: #ba3939; 
+  background: #ffe0e0; 
+  border: 1px solid #a33a3a;
+  border-radius: 7px;
+  width:20%;
+}
+
+.box {
+position: relative;
+width: 70%;
+margin: 0 auto;
+height: auto;
+max-height: 70vh;
+margin-top: calc(100vh - 85vh - 20px);
+background: #ffc3b6;
+border-radius: 18px;
+padding: 20px;
+border:none;
+overflow: auto;
+}
+
+
+.close-icon {
+content: 'x';
+color:wh;
+cursor: pointer;
+position: fixed;
+right: calc(15% - 30px);
+top: calc(100vh - 85vh - 33px);
+background:none;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+line-height: 20px;
+text-align: center;
+border:none;
+font-size: 38px;
+}
+
+.P-signup{
+	border:none;
+	background-color:#ffc3b6;
+  padding-left: 66px;
+}
+.P-login{
+	border:none;
+	background-color:#ffc3b6;
+	padding-right: 66px;
+}
+
+.b-page{
+	border:none;
+	border-radius:6px;
+	width: 110px;
+	margin-top:300px;
+	margin-bottom:30px;
+	margin-left:95px;
+	position:absolute;
+	background-color: #00ccff;
+}

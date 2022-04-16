@@ -1,0 +1,60 @@
+import React ,{useEffect, useState}from 'react'
+import { onSnapshot, collection, addDoc , setDoc, doc, deleteDoc} from "firebase/firestore"; 
+import { db } from "../firebase";
+
+
+var MakeTool;
+export default MakeTool = (props)=>{
+	const [selles, setSelles] = useState([{ name: "Loading...", id: "initial" }]);
+	const [titel, setT] = useState("")
+
+  
+  
+  const getdate =() =>{
+  	onSnapshot(collection(db, "posts"), (snapshot) =>{
+  		setSelles(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+  	})
+  }
+  const addDate= async ()=>{
+  	const collectionRef = collection(db, "posts"); 
+  	const payload = { tit:titel }; 
+  	await addDoc(collectionRef, payload);
+  }
+  const editDate = async (id)=>{
+  	const docRef = doc(db, 'posts', id)
+  	const payload_edit = {tit:'done'}
+  	setDoc(docRef, payload_edit)
+  } 
+  const deleteDate = async (id)=>{
+  	const docRef = doc(db, 'posts', id)
+  	await deleteDoc(docRef)
+  }
+	useEffect(() => { 
+		getdate()
+	}, []);
+
+
+	return (
+	<>
+    <div>
+      		<input placeholder="titel" onChange={(e) => { setT(e.target.value) }}/> 
+      		<button onClick={()=> addDate()}> Submit Post </button>
+      	
+      		
+      		<div>
+      		    
+      		      {selles.map((selles) => ( 
+      		          <div key={selles.id}> 
+      		                 {selles.tit} 
+      		          <button onClick={()=> editDate(selles.id)} >edit</button>
+      		          <button onClick={()=> deleteDate(selles.id)} >delete</button>
+      		        </div> 
+      		       ))} 
+    
+      		</div>
+      		
+    </div>
+	</>
+	)
+}
+
