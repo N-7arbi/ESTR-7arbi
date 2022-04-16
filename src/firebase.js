@@ -4,13 +4,13 @@ import {  getFirestore, query, getDocs,collection, where,addDoc,} from "firebase
 
 
 const firebaseConfig = {
-apiKey: "AIzaSyBW8nl4EiG4ibZSA91T5QNeQtstXaRerZM",
-authDomain: "estr-b9274.firebaseapp.com",
-projectId: "estr-b9274",
-storageBucket: "estr-b9274.appspot.com",
-messagingSenderId: "1066868143625",
-appId: "1:1066868143625:web:996a875390979de3622ad8",
-measurementId: "G-T0PHS24V2X"
+apiKey: "",
+authDomain: "",
+projectId: "",
+storageBucket: "",
+messagingSenderId: "",
+appId: "",
+measurementId: ""
 };
 
 
